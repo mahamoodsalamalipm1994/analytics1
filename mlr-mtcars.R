@@ -7,5 +7,13 @@ model <- lm(mpg ~ disp + hp + wt + qsec, data = mtcars)
 k <- ols_step_all_possible(model)
 plot(k)
 k
+fit3= lm(mpg ~ hp + wt + qsec, data = mtcars)
+summary(fit3)
 summary(lm(mpg ~ wt, data=mtcars))
 summary(lm(mpg ~ wt+ hp, data=mtcars))
+?ols_step_all_possible
+AIC(fit3)
+fit4 = lm(mpg ~ . , data = mtcars)
+summary(fit4)
+AIC(fit3)
+

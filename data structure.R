@@ -46,7 +46,9 @@ x[x<4|x>6]
 x[x<4|x>6]=100
 x
 length(x[x==100]) #number of times 100 in x
-
+y=1:5
+y
+y[2]=10
 #Matrix
 (m1=matrix(100:111,nrow=4))
 (m1=matrix(100:111,ncol=3,byrow=T))
